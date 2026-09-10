@@ -5,7 +5,7 @@ package cgosqlite
 import "testing"
 
 func TestSQLiteVersion(t *testing.T) {
-	const want = "3.53.1"
+	const want = "3.53.4"
 	got := SQLiteVersion()
 	if got != want {
 		t.Fatalf("wrong version, want %s, got %s", want, got)
@@ -13,7 +13,7 @@ func TestSQLiteVersion(t *testing.T) {
 }
 
 func TestSQLiteVersionNumber(t *testing.T) {
-	const want = 3053001
+	const want = 3053004
 	got := SQLiteVersionNumber()
 	if got != want {
 		t.Fatalf("wrong version, want %d, got %d", want, got)
